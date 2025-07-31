@@ -17,10 +17,7 @@ This repository contains my solution for the [SIGNATE "Bank Marketing Campaign"]
 
 | File                         | Description                                   |
 |------------------------------|-----------------------------------------------|
-| `eda.ipynb`                  | Exploratory Data Analysis                    |
-| `model_lightgbm.ipynb`       | SMOTE + LightGBM model building and tuning   |
 | `submit_lightgbm_final.csv`  | Final prediction file (ready for submission) |
-| `submit_sample.csv`          | SIGNATE-provided sample submission format    |
 | `README.md`                  | This file                                    |
 
 ---
