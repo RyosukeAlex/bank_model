@@ -51,19 +51,6 @@ This repository contains my solution for the [SIGNATE "Bank Marketing Campaign"]
 | LightGBM      | 0.775   | 0.50       | 0.43   |
 
 ---
-
-## ⚠️ Submission Format Issues and Resolution
-
-During submission, SIGNATE threw the error:
-
-> `"There is no prediction or the format is wrong for ID '3'"`
-
-Although the format was technically correct (`id: int`, `y: float`, 18083 rows), the issue was resolved by:
-
-✅ Reading `submit_sample.csv` with `header=None`  
-✅ Replacing only the second column with prediction  
-✅ Saving with `header=False`, `index=False`
-
 ```python
 submit = pd.read_csv("submit_sample.csv", header=None)
 submit[1] = y_pred_proba
